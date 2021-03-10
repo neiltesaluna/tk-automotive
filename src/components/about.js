@@ -16,7 +16,7 @@ const Header = ({ data }) => (
           <div className="about-details">
             <span className="name">We are {data.name}.</span>
             <h2 className="sub-position">
-              We are your {data.designation}.
+              Your {data.designation}.
             </h2>
             <div
               dangerouslySetInnerHTML={{
