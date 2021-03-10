@@ -114,7 +114,7 @@ export default class Header extends Component {
                     });
                   }}
                 >
-                  <li key="Home">
+                  <li key="home">
                     <Link to="/#Home">Home</Link>
                   </li>
                   {/*

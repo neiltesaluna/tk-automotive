@@ -5,7 +5,7 @@ export default class Banner extends Component {
   render() {
     const { data } = this.props;
     return (
-      <div className="banner">
+      <div className="banner" id="Home">
         <Img
           fluid={data.bannerImage.fluid}
           objectFit="cover"
