@@ -26,11 +26,15 @@ const Header = ({ data }) => (
             <ul className="details">
               <li>
                 <strong>Contact Number</strong>
-                <p>{data.contactNumber}</p>
+                <p>
+                  <a href={`tel:${data.contactNumber}`}>{data.contactNumber}</a>
+                </p>
               </li>
               <li>
                 <strong>Location</strong>
-                <p>{data.location}</p>
+                <p>
+                <a href="https://g.page/t-k-automotive?share" target="_blank">{data.location}</a>
+                </p>
               </li>
               <li>
                 <strong>Email</strong>
