@@ -52,11 +52,14 @@ const IndexPage = ({ data }) => (
         return <Photos key="Photos" data={data.contentfulPhotos}></Photos>;
       })}
 
-    {data.contentfulSiteInformation.menus
+    {/*
+      commenting unused components
+      {data.contentfulSiteInformation.menus
       .filter(item => item === "Contact")
       .map(t => {
         return <Contact key="Contact" data={data.contentfulAboutUs.gmail}></Contact>;
-      })}
+      })}*/}
+
   </Layout>
 );
 

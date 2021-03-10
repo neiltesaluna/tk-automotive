@@ -26,6 +26,11 @@ export default class Contact extends Component {
             </div>
             <div>
               <label>
+                Your Number: <input type="number" name="number" required />
+              </label>
+            </div>
+            <div>
+              <label>
                 Message: <textarea name="message" required></textarea>
               </label>
             </div>
