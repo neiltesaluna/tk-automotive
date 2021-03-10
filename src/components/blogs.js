@@ -6,10 +6,10 @@ export default class Blogs extends Component {
   render() {
     const { data } = this.props;
     return (
-      <div className="blogs-section section" id="Blogs">
+      <div className="blogs-section section" id="Specialties">
         <div className="container">
           <div className="section-head">
-            <h2>Blogs</h2>
+            <h2>Specialties</h2>
           </div>
           <ul
             className={`blogs-list ${data.edges.length < 5 ? "few-blogs" : ""}`}
@@ -38,8 +38,8 @@ export default class Blogs extends Component {
             })}
           </ul>
           <div className="see-more">
-            <Link to="/blogs">
-              <span>More Blogs</span>
+            <Link to="/specialties">
+              <span>More</span>
             </Link>
           </div>
         </div>

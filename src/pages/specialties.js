@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
 import { Link } from "gatsby";
-import moment from "moment";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -13,13 +12,13 @@ export default class Blogs extends Component {
     return (
       <Layout>
         <SEO
-          title="Blogs"
-          keywords={[`T&K Automotive`, `Local Mechanic`, `Mechanic`, `Services`]}
+          title="Specialties"
+          keywords={[`T&K Automotive`, `Local Mechanic`, `Mechanic`, `Specialties`]}
         />
-        <div className="site-container blogs-page" id="Blogs">
+        <div className="site-container blogs-page" id="Specialties">
           <div className="container">
             <div className="section-head">
-              <h1 className="line-heading h2">Blogs</h1>
+              <h1 className="line-heading h2">Specialties</h1>
             </div>
             <ul
               className={`blogs-list ${
@@ -42,10 +41,6 @@ export default class Blogs extends Component {
                       )}
                       <div className="details">
                         <h3 className="title">{item.node.title}</h3>
-                        <span className="date">
-                          <i className="fas fa-calendar-alt"></i>{" "}
-                          {moment(item.node.createdAt).format("LL")}
-                        </span>
                       </div>
                     </div>
                   </li>
