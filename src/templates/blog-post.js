@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
-import moment from "moment";
 import { DiscussionEmbed } from "disqus-react";
 
 import Layout from "../components/layout";
@@ -51,11 +50,6 @@ export default class blogPost extends Component {
             )}
 
             <div className="details">
-              <h1 className="title">{data.title}</h1>
-              <span className="date">
-                <i className="fas fa-calendar-alt"></i>{" "}
-                {moment(data.createdAt).format("LL")}
-              </span>
               <div
                 dangerouslySetInnerHTML={{
                   __html: data.description.childMarkdownRemark.html
