@@ -44,8 +44,8 @@ export default class Header extends Component {
                     });
                   }}
                 >
-                  <li key="home">
-                    <Link to="/#home">Home</Link>
+                  <li key="Home">
+                    <Link to="/#Home">Home</Link>
                   </li>
                   {data.menus
                     .filter(item => item === "About")
@@ -114,8 +114,8 @@ export default class Header extends Component {
                     });
                   }}
                 >
-                  <li key="home">
-                    <Link to="/#home">Home</Link>
+                  <li key="Home">
+                    <Link to="/#Home">Home</Link>
                   </li>
                   {data.menus
                     .filter(item => item === "Blogs")
