@@ -1,3 +1,4 @@
+{/*
 import React, { Component } from "react";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
@@ -78,3 +79,4 @@ export const pageQuery = graphql`
     }
   }
 `;
+*/}

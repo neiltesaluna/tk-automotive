@@ -117,6 +117,7 @@ export default class Header extends Component {
                   <li key="Home">
                     <Link to="/#Home">Home</Link>
                   </li>
+                  {/*
                   {data.menus
                     .filter(item => item === "Blogs")
                     .map(t => {
@@ -126,6 +127,7 @@ export default class Header extends Component {
                         </li>
                       );
                     })}
+                  */}
                   {data.menus
                     .filter(item => item === "Photos")
                     .map(t => {

@@ -37,11 +37,13 @@ export default class Blogs extends Component {
               );
             })}
           </ul>
+          {/*
           <div className="see-more">
             <Link to="/specialties">
               <span>More</span>
             </Link>
           </div>
+        */}
         </div>
       </div>
     );
