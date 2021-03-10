@@ -24,7 +24,7 @@ body{margin:0;background:#fafafe}
 .banner .banner-details .social{display:flex;margin:0;padding:0;list-style:none}
 .banner .banner-details .social li{margin:0 10px}
 .banner .banner-details .social li a{text-decoration:none;width:40px;height:40px;display:flex;justify-content:center;align-items:center;border:2px solid #fff;color:#fff;position:relative;overflow:hidden}
-.banner .banner-details .social li a:after{content:"";background:#ef5826;position:absolute;top:-100%;left:0;-webkit-transition:0.3s all;transition:0.3s all;height:100%;width:100%}
+.banner .banner-details .social li a:after{content:"";background:#ef2d26;position:absolute;top:-100%;left:0;-webkit-transition:0.3s all;transition:0.3s all;height:100%;width:100%}
 .banner .banner-details .social li a:before{position:relative;z-index:1}
 .banner .banner-details .social li a:hover:after{top:0}
 .site-header .header-main{display:flex;justify-content:center;align-items:center}
@@ -65,7 +65,7 @@ body{margin:0;background:#fafafe}
 .testi-inner p{}
 .testi-inner .name{margin:0}
 .testimonials{overflow:hidden}
-.testi-inner .sub-name{font-size:14px}
+.testi-inner .sub-name{font-size:14px;color:#ef2d26}
 .testimonials{text-align:center}
 form label{width:100%}
 form input,
@@ -96,7 +96,7 @@ form>div{margin-bottom:15px}
 h2,
 .line-heading{display:inline-block;position:relative}
 h2:after,
-.line-heading:after{content:"";width:25px;height:1px;display:inline-block;position:absolute;background:#ef5826;top:100%;left:0}
+.line-heading:after{content:"";width:25px;height:1px;display:inline-block;position:absolute;background:#ef2d26;top:100%;left:0}
 .see-more{text-align:center;display:inline-block;width:100%;margin-top:20px}
 .see-more a{text-decoration:none;width:auto;height:auto;border:1px solid #333;color:#333;position:relative;overflow:hidden;padding:8px 20px;display:inline-block;font-weight:600}
 .see-more a:after{content:"";background:#333;position:absolute;top:-100%;left:0;-webkit-transition:0.3s all;transition:0.3s all;height:100%;width:100%;z-index:0}
