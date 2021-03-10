@@ -29,8 +29,8 @@ const Header = ({ data }) => (
                 <p>{data.name}</p>
               </li>
               <li>
-                <strong>Age</strong>
-                <p>{data.age} Years</p>
+                <strong>Contact Number</strong>
+                <p>{data.contactNumber} Years</p>
               </li>
               <li>
                 <strong>Location</strong>

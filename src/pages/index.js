@@ -7,7 +7,6 @@ import SEO from "../components/seo";
 import Banner from "../components/banner";
 import About from "../components/about";
 import Service from "../components/service";
-import Work from "../components/work";
 import Blogs from "../components/blogs";
 import Testimonial from "../components/testimonial";
 import Contact from "../components/contact";
@@ -16,15 +15,15 @@ import Photos from "../components/photos";
 const IndexPage = ({ data }) => (
   <Layout header="home">
     <SEO
-      title={data.contentfulAboutMe.designation}
-      keywords={[`Rohit Gupta`, `Frontend Developer`, `Developer`]}
+      title={data.contentfulAboutUs.designation}
+      keywords={[`T&K Automotive`, `Local Mechanic`, `Mechanic`]}
     />
-    <Banner data={data.contentfulAboutMe}></Banner>
+    <Banner data={data.contentfulAboutUs}></Banner>
 
     {data.contentfulSiteInformation.menus
       .filter(item => item === "About")
       .map(t => {
-        return <About key="About" data={data.contentfulAboutMe}></About>;
+        return <About key="About" data={data.contentfulAboutUs}></About>;
       })}
 
     {data.contentfulSiteInformation.menus
@@ -37,12 +36,6 @@ const IndexPage = ({ data }) => (
       .filter(item => item === "Blogs")
       .map(t => {
         return <Blogs key="Blogs" data={data.allContentfulBlogs}></Blogs>;
-      })}
-
-    {data.contentfulSiteInformation.menus
-      .filter(item => item === "Work")
-      .map(t => {
-        return <Work key="Work" data={data.allContentfulWorks}></Work>;
       })}
 
     {data.contentfulSiteInformation.menus
@@ -62,7 +55,7 @@ const IndexPage = ({ data }) => (
     {data.contentfulSiteInformation.menus
       .filter(item => item === "Contact")
       .map(t => {
-        return <Contact key="Contact" data={data.contentfulAboutMe.gmail}></Contact>;
+        return <Contact key="Contact" data={data.contentfulAboutUs.gmail}></Contact>;
       })}
   </Layout>
 );
@@ -71,7 +64,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query AboutQuery {
-    contentfulAboutMe {
+    contentfulAboutUs {
       name
       photo {
         file {
@@ -88,7 +81,7 @@ export const pageQuery = graphql`
         }
       }
       designation
-      age
+      contactNumber
       facebook
       github
       gmail
@@ -155,36 +148,6 @@ export const pageQuery = graphql`
           description {
             childMarkdownRemark {
               html
-            }
-          }
-          avatarImage {
-            fluid(maxWidth: 200) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
-            }
-          }
-        }
-      }
-    }
-    allContentfulWorks {
-      edges {
-        node {
-          siteName
-          url
-          image {
-            fluid(maxWidth: 600) {
-              base64
-              aspectRatio
-              src
-              srcSet
-              srcWebp
-              srcSetWebp
-              sizes
             }
           }
         }

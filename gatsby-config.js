@@ -4,13 +4,13 @@ if (process.env.ENVIRONMENT !== "production") {
   dotenv.config();
 }
 
-const { spaceId, accessToken } = process.env;
+const { SPACE_ID, CONTENT_API } = process.env;
 
 module.exports = {
   siteMetadata: {
-    title: `Rohit Gupta`,
-    description: `Personal Site`,
-    author: `@rohitguptab`
+    title: `T&K Automotive`,
+    description: `Mechanic`,
+    author: `Neil Tesaluna`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -24,8 +24,8 @@ module.exports = {
     {
       resolve: "gatsby-source-contentful",
       options: {
-        spaceId,
-        accessToken
+        spaceId: SPACE_ID,
+        accessToken: CONTENT_API
       }
     },
     `gatsby-transformer-sharp`,
@@ -34,8 +34,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Rohit Gupta`,
-        short_name: `Rohit Gupta`,
+        name: `T&K Automotive`,
+        short_name: `T&K Automotive`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#333`,
