@@ -20,6 +20,7 @@ export default class Banner extends Component {
                 return <li key={index}>{item}</li>;
               })}
             </ul>
+            {/* commenting out facebook due to no link
             <ul className="social">
               <li>
                 <a
@@ -30,6 +31,7 @@ export default class Banner extends Component {
                 ></a>
               </li>
             </ul>
+            */}
           </div>
         </div>
       </div>

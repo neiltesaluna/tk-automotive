@@ -43,6 +43,7 @@ const Header = ({ data }) => (
                 </p>
               </li>
             </ul>
+            {/* commenting our socials due to no link
             <div className="socials">
               <ul>
                 <li>
@@ -55,6 +56,7 @@ const Header = ({ data }) => (
                 </li>
               </ul>
             </div>
+            */}
           </div>
         </div>
       </div>
