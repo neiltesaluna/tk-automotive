@@ -33,7 +33,7 @@ body{margin:0;background:#fafafe}
 .site-header .header-main .menu ul{padding:0;display:flex;margin:0;justify-content:flex-end;list-style:none}
 .site-header .header-main .menu ul li{margin:0 10px}
 .site-header .header-main .menu ul li a{position:relative;color:#fff;overflow:hidden;text-decoration:none}
-.site-header .header-main .menu ul li a:after{content:"";width:0;height:1px;position:absolute;bottom:-3px;left:0;background:#fff;transition:0.5s all}
+.site-header .header-main .menu ul li a:after{content:"";width:0;height:1px;position:absolute;bottom:-3px;left:0;background:#ef2d26;transition:0.5s all}
 .site-header .header-main .menu ul li a:hover:after{width:100%;transition:0.5s all}
 .section{padding:50px 0}
 .section:nth-child(even){background:#fff}
