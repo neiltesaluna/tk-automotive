@@ -31,17 +31,17 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-remark`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `T&K Automotive`,
-        short_name: `T&K Automotive`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#333`,
-        icon: `src/images/tk-automotive-logo.png` // This path is relative to the root of the site.
-      }
-    }, // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
-    `gatsby-plugin-offline`
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `T&K Automotive`,
+    //     short_name: `T&K Automotive`,
+    //     start_url: `/`,
+    //     background_color: `#663399`,
+    //     theme_color: `#333`,
+    //     icon: `src/images/tk-automotive-logo.png` // This path is relative to the root of the site.
+    //   }
+    // }, // To learn more, visit: https://gatsby.dev/offline // this (optional) plugin enables Progressive Web App + Offline functionality
+    // `gatsby-plugin-offline`
   ]
 };
