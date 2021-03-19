@@ -33,7 +33,7 @@ const Header = ({ data }) => (
               <li>
                 <strong>Location</strong>
                 <p>
-                <a href="https://g.page/t-k-automotive?share" target="_blank">{data.location}</a>
+                <a href="https://g.page/t-k-automotive?share" target="_blank" rel="noopener noreferrer">{data.location}</a>
                 </p>
               </li>
               <li>

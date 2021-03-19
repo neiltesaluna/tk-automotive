@@ -18,7 +18,7 @@ export default class Testimonial extends Component {
         <div className="container">
           <div className="section-head text-center">
             <h2>Testimonials</h2>
-            <p><a href="https://www.google.com/search?q=t%26k+automotive&oq=t%26k+auto&aqs=chrome.0.69i59j69i57j0i457j46i175i199j0j69i61l3.5333j0j4&sourceid=chrome&ie=UTF-8#lrd=0x6ad65f9098c097f3:0xda5edddc635b4370,1,,," target="_blank">Google Reviews for T&K Automotive</a></p>
+            <p><a href="https://www.google.com/search?q=t%26k+automotive&oq=t%26k+auto&aqs=chrome.0.69i59j69i57j0i457j46i175i199j0j69i61l3.5333j0j4&sourceid=chrome&ie=UTF-8#lrd=0x6ad65f9098c097f3:0xda5edddc635b4370,1,,," target="_blank" rel="noopener noreferrer">Google Reviews for T&K Automotive</a></p>
           </div>
           <Slider {...settings}>
             {data.edges.map((item, index) => {
