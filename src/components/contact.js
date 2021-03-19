@@ -10,22 +10,28 @@ export default class Contact extends Component {
             <h2 className="text-center">Contact</h2>
           </div>
           <div className="row text-center pb-5">
-            <div className="col-md-4">
-              <a className="btn-floating blue accent-1">
-                <i className="fas fa-map-marker-alt"></i>
-              </a>
-              <p className="mb-md-0"><a href="https://g.page/t-k-automotive?share" target="_blank" rel="noopener noreferrer">{data.location}</a></p>
+            <div className="col">
+              <i className="fa fa-clock h2"></i>
+              <h3 className="mb-md-1">Opening Hours</h3>
+              <h4>
+                Mon - Sun
+              </h4>
+              <p>
+                8am - 7pm
+              </p>
             </div>
-            <div className="col-md-4">
-              <a className="btn-floating blue accent-1">
-                <i className="fas fa-phone"></i>
-              </a>
+            <div className="col">
+                <i className="fas fa-phone h2"></i>
               <p><a href={`tel:${data.contactNumber}`}>{data.contactNumber}</a></p>
             </div>
-            <div className="col-md-4">
-              <a className="btn-floating blue accent-1">
-                <i className="fas fa-envelope"></i>
-              </a>
+          </div>
+          <div className="row text-center pb-5">
+            <div className="col">
+                <i className="fas fa-map-marker-alt h2"></i>
+              <p className="mb-md-0"><a href="https://g.page/t-k-automotive?share" target="_blank" rel="noopener noreferrer">{data.location}</a></p>
+            </div>
+            <div className="col">
+                <i className="fas fa-envelope h2"></i>
               <p className="mb-0"><a href={`mailto:${data.gmail}`}>{data.gmail}</a></p>
             </div>
           </div>
