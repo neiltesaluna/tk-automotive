@@ -9,7 +9,7 @@ export default class Contact extends Component {
           <div className="section-head">
             <h2 className="text-center">Contact</h2>
           </div>
-          <div className="row text-center">
+          <div className="row text-center pb-5">
             <div className="col-md-4">
               <a className="btn-floating blue accent-1">
                 <i className="fas fa-map-marker-alt"></i>
