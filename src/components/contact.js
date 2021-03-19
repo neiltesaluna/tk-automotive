@@ -5,7 +5,7 @@ export default class Contact extends Component {
     const { data } = this.props;
     return (
       <div className="contact" id="Contact">
-        <div className="container pb-5">
+        <div className="container pb-5 pt-5">
           <div className="section-head">
             <h2 className="text-center">Contact</h2>
           </div>
